@@ -5,7 +5,7 @@ import "../components/portfolio.css"
 import SEO from "../components/seo"
 
 const PortfolioPage = () => (
-  <div classname="background">
+  <div className="background">
     <SEO title="Portfolio" />
     <div className="menu-bar">
       <Link to="/">Home</Link>
@@ -14,7 +14,7 @@ const PortfolioPage = () => (
       </Link>
       <Link to="/resume/">Resume</Link>
     </div>
-    <div>
+    <div className="title">
       <h1>Portfolio</h1>
     </div>
     <div className="project">

@@ -5,7 +5,7 @@ import "../components/resume.css"
 import SEO from "../components/seo"
 
 const ResumePage = () => (
-  <div classname="background">
+  <div className="background">
     <SEO title="Resume" />
     <div className="menu-bar">
       <Link to="/">Home</Link>
@@ -14,7 +14,7 @@ const ResumePage = () => (
         __Resume__
       </Link>
     </div>
-    <div>
+    <div className="title">
       <h1>Resume</h1>
     </div>
     <div className="project">
