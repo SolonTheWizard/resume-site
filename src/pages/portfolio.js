@@ -9,8 +9,10 @@ const PortfolioPage = () => (
     <SEO title="Portfolio" />
     <div className="menu-bar">
       <Link to="/">Home</Link>
-      <Link to="/">Home</Link>
-      <Link to="/">Home</Link>
+      <Link className="selected-page" to="/portfolio/">
+        __Portfolio__
+      </Link>
+      <Link to="/resume/">Resume</Link>
     </div>
     <div>
       <h1>Portfolio</h1>

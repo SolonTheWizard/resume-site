@@ -19,7 +19,7 @@ const IndexPage = () => (
       <div className="internal-links">
         <Link to="/portfolio/">Portfolio</Link>
         <Link to="/resume/">Resume</Link>
-        <Link to="/contract/">Contact</Link>
+        <Link to="/contact/">Contact</Link>
       </div>
     </div>
   </div>

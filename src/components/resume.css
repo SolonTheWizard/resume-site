@@ -36,11 +36,6 @@ h1 {
   font-weight: 400;
 }
 
-.project {
-  margin-left: 20px;
-  padding: 10px 10px;
-}
-
 .selected-page {
   text-decoration: underline;
 }
