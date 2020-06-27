@@ -1,10 +1,23 @@
+.background {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  font-size: 16px;
+}
 .business-card {
   box-shadow: 5px 10px 23px rgba(31, 28, 87, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px 30px;
   margin-bottom: 80px;
+  margin-top: 180px;
+  width: 600px;
 }
 
 .internal-links {
@@ -12,22 +25,40 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 8px 0 10px;
 }
 .external-links {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-start;
   min-width: 100%;
 }
 
 a {
-  padding: 10px 20px 10px;
+  padding: 7px 18px 7px;
   margin: 0 35px;
   color: black;
   text-decoration: none;
 }
 
-h1 {
-  padding: 0;
-  margin: 0;
+.title {
+  padding: 10px 0;
+  margin: 0 0 2px;
   font-size: 50px;
+  font-weight: 600;
+  /* ask kelson to help me change the font*/
+}
+.subtitle {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 400;
+  /* ask kelson to help me change the font*/
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 600px;
 }

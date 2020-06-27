@@ -1,26 +1,28 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import "../components/index.css"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <div className="background">
     <SEO title="Home" />
     <div className="business-card">
       <div className="external-links">
-        <Link to="/portfolio/">Github Link Here</Link>
+        <a href="https://github.com/SolonTheWizard">Github</a>
+        <a href="https://www.linkedin.com/in/samuel-s-548841120/">LinkedIN</a>
       </div>
-      <h1>Samuel Suddath</h1>
-      <h3>SolonTheWizard</h3>
+      <div className="info">
+        <h1 className="title">Samuel Suddath</h1>
+        <h3 className="subtitle">Front-End React Developer</h3>
+      </div>
       <div className="internal-links">
         <Link to="/portfolio/">Portfolio</Link>
         <Link to="/resume/">Resume</Link>
         <Link to="/contract/">Contact</Link>
       </div>
     </div>
-  </Layout>
+  </div>
 )
 
 export default IndexPage
