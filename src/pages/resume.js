@@ -8,9 +8,13 @@ const ResumePage = () => (
   <div className="background">
     <SEO title="Resume" />
     <div className="menu-bar">
-      <Link to="/">Home</Link>
-      <Link to="/portfolio/">Portfolio</Link>
-      <Link className="selected-page" to="/resume/">
+      <Link to="/" className="menu-bar-link">
+        Home
+      </Link>
+      <Link to="/portfolio/" className="menu-bar-link">
+        Portfolio
+      </Link>
+      <Link to="/resume/" className="selected-page menu-bar-link">
         __Resume__
       </Link>
     </div>
