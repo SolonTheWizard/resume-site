@@ -26,3 +26,11 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+/*
+Questions:
+1) How to do images
+2) How to change fonts
+3) Why is my index.css getting overwritten by page.css
+4)
+*/

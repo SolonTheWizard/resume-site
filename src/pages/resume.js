@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../components/resume.css"
+import "../components/page.css"
 import SEO from "../components/seo"
 
 const ResumePage = () => (
