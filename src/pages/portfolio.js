@@ -8,11 +8,15 @@ const PortfolioPage = () => (
   <div className="background">
     <SEO title="Portfolio" />
     <div className="menu-bar">
-      <Link to="/">Home</Link>
-      <Link className="selected-page" to="/portfolio/">
+      <Link to="/" className="menu-bar-link">
+        Home
+      </Link>
+      <Link to="/portfolio/" className="selected-page menu-bar-link">
         __Portfolio__
       </Link>
-      <Link to="/resume/">Resume</Link>
+      <Link to="/resume/" className="menu-bar-link">
+        Resume
+      </Link>
     </div>
     <div className="title">
       <h1>Portfolio</h1>

@@ -17,9 +17,15 @@ const IndexPage = () => (
         <h3 className="subtitle">Front-End React Developer</h3>
       </div>
       <div className="internal-links">
-        <Link to="/portfolio/">Portfolio</Link>
-        <Link to="/resume/">Resume</Link>
-        <Link to="/contact/">Contact</Link>
+        <Link to="/portfolio/" className="directory-link">
+          Portfolio
+        </Link>
+        <Link to="/resume/" className="directory-link">
+          Resume
+        </Link>
+        <Link to="/contact/" className="directory-link">
+          Contact
+        </Link>
       </div>
     </div>
   </div>
