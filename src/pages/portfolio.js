@@ -57,11 +57,12 @@ const PortfolioPage = () => (
         </div>
         <div className="project-image">
           <a
-            href="https://example.com"
+            className="image-link"
+            href="https://custom-spellbook.web.app/"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <img src={project1Image} alt="project 1" height="500" width="500" />
+            <img src={project1Image} alt="project 1" />
           </a>
         </div>
       </div>
@@ -121,6 +122,13 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
+  .image-link {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 500px;
+  }
+
   h1 {
     padding-left: 75px;
     margin: 0 0 2px 10px;
@@ -136,13 +144,17 @@ const Wrapper = styled.div`
     letter-spacing: 1px;
     word-spacing: 5px;
   }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
   .title {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    font-family: ;
+    font-family: sans-serif;
   }
 
   .project {
@@ -153,21 +165,20 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 90%;
     height: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .project-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    max-width: 500px;
   }
 
   .project-image {
     display: flex;
-    width: 500px;
-    height: 500px;
-    margin: 10px;
+    max-width: 500px;
+    max-height: 500px
     align-items: center;
     justify-content: center;
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);

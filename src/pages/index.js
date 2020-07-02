@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import "../components/globalStyles.css"
+import "../global/styles.css"
 import SEO from "../global/seo"
 import Layout from "../global/layout"
 
@@ -22,9 +22,6 @@ const IndexPage = () => (
         <div className="internal-links">
           <Link to="/portfolio/" className="directory-link">
             Portfolio
-          </Link>
-          <Link to="/resume/" className="directory-link">
-            Resume
           </Link>
           <Link to="/contact/" className="directory-link">
             Contact
@@ -49,7 +46,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 30px;
+    padding: 10px 30px;
     margin-bottom: 80px;
     margin-top: 180px;
     width: 600px;
@@ -58,17 +55,29 @@ const Wrapper = styled.div`
   .internal-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 8px 0 10px;
+    margin: 8px 0 20px;
+    min-width: 90%;
   }
   .external-links {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     min-width: 100%;
+    margin-top: 5px;
   }
 
+  a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 18px;
+    font-size: 1rem;
+  }
+
+  .directory-link {
+  }
   .directory-link:hover {
     background-color: #f6f6f6;
     transition: ease 0.3s;
@@ -83,16 +92,16 @@ const Wrapper = styled.div`
   }
 
   .title {
-    padding: 10px 0;
+    padding: 40px 0 10px;
     margin: 2px 4px 2px;
-    font-size: 50px;
+    font-size: 2.75rem;
     font-weight: 600;
     /* ask kelson to help me change the font*/
   }
   .subtitle {
-    padding: 0;
-    margin: 0 0 8px;
-    font-size: 34px;
+    padding: 5px 0 10px;
+    margin: 2px 8px 8px;
+    font-size: 2rem;
     font-weight: 400;
     /* ask kelson to help me change the font*/
   }
@@ -106,13 +115,3 @@ const Wrapper = styled.div`
   }
 `
 export default IndexPage
-
-/*
-Questions:
-1) How to do images
-2) How to change fonts
-3) Why is my index.css getting overwritten by 
-4) cool background for home screen
-5) make links to external pages as images
-6) favicon in white?
-*/
