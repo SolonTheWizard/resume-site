@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import project1Image from "../images/project1Image.png"
+import project2Image from "../images/project2Image.png"
 import SEO from "../global/seo"
 import Layout from "../global/layout"
 
@@ -19,12 +20,12 @@ const PortfolioPage = () => (
         </Link>
       </div>
       <div className="title">
-        <h1>Portfolio</h1>
+        <h1>___Portfolio___________</h1>
       </div>
       <div className="project">
         <div className="project-details">
           <div className="project-title">
-            <h2>Custom Spellbook</h2>
+            <h2>_Custom Spellbook_</h2>
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -66,11 +67,22 @@ const PortfolioPage = () => (
           </a>
         </div>
       </div>
+
       <div className="project">
-        <div className="project-image">Image goes here</div>
+        <div className="project-image">
+          <a
+            className="image-link"
+            href="
+            https://dadjoke-hangman.web.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={project2Image} alt="project 2" />
+          </a>
+        </div>
         <div className="project-details">
           <div className="project-title">
-            <h2>Dad Joke Hangman</h2>
+            <h2>_Dad Joke Hangman_</h2>
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -155,6 +167,7 @@ const Wrapper = styled.div`
     align-items: flex-start;
     width: 100%;
     font-family: sans-serif;
+    text-decoration: underline;
   }
 
   .project {
