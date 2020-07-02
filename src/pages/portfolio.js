@@ -160,7 +160,7 @@ const Wrapper = styled.div`
   .project {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 20px;
     padding: 10px 10px;
     width: 90%;
@@ -172,13 +172,16 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    width: 50%;
+    background: #f4f7fb;
+    margin: 0 10px;
+    border-radius: 5px;
   }
 
   .project-image {
     display: flex;
     max-width: 500px;
-    max-height: 500px
+    max-height: 500px;
     align-items: center;
     justify-content: center;
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
@@ -219,8 +222,8 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    padding-left: 20px;
+    width: 98%;
+    text-indent: 15px;
   }
 
   li {

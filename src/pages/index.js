@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import github from "../images/github.png"
+import linkedin from "../images/linkedin.png"
 import "../global/styles.css"
 import SEO from "../global/seo"
 import Layout from "../global/layout"
@@ -12,8 +14,26 @@ const IndexPage = () => (
     <Wrapper>
       <div className="business-card">
         <div className="external-links">
-          <a href="https://github.com/SolonTheWizard">Github</a>
-          <a href="https://www.linkedin.com/in/samuel-s-548841120/">LinkedIN</a>
+          <a
+            className="social-media-link"
+            href="https://github.com/SolonTheWizard"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img className="social-media-link" src={github} alt="github link" />
+          </a>
+          <a
+            className="social-media-link"
+            href="https://www.linkedin.com/in/samuel-s-548841120/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img
+              className="social-media-link"
+              src={linkedin}
+              alt="linkedin link"
+            />
+          </a>
         </div>
         <div className="info">
           <h1 className="title">Samuel Suddath</h1>
@@ -50,6 +70,7 @@ const Wrapper = styled.div`
     margin-bottom: 80px;
     margin-top: 180px;
     width: 600px;
+    background: #f4f7fb;
   }
 
   .internal-links {
@@ -68,18 +89,26 @@ const Wrapper = styled.div`
     margin-top: 5px;
   }
 
+  .social-media-link {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 5px;
+  }
+
   a {
     color: black;
     text-decoration: none;
     text-align: center;
     padding: 8px 18px;
     font-size: 1rem;
+    border-radius: 2px;
   }
 
   .directory-link {
   }
   .directory-link:hover {
-    background-color: #f6f6f6;
+    background-color: #ffffff;
     transition: ease 0.3s;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
