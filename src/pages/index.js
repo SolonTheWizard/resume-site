@@ -24,7 +24,7 @@ const IndexPage = () => (
           </a>
           <a
             className="social-media-link"
-            href="https://www.linkedin.com/in/samuel-s-548841120/"
+            href="www.linkedin.com/in/SamuelSuddath/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -47,6 +47,15 @@ const IndexPage = () => (
           <Link to="/aboutMe/" className="directory-link">
             About Me
           </Link>
+        </div>
+        <div className="contact-info">
+          {/*className={`${contactMe ? "" : " hidden"}`} */}
+          <ul>
+            <li>Email: Srsuddath@gmail.com</li>
+            <li>Phone: 813-486-8098</li>
+            <li>LinkedIn: www.linkedin.com/in/SamuelSuddath/</li>
+            <li>Github: https://github.com/SolonTheWizard</li>
+          </ul>
         </div>
       </div>
     </Wrapper>
@@ -79,7 +88,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 8px 0 20px;
+    margin: 8px 0 8px;
     min-width: 90%;
   }
   .external-links {
@@ -88,6 +97,23 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     min-width: 100%;
     margin-top: 5px;
+  }
+  .contact-.info,
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+  }
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+  li {
+    margin: 3px;
+    font-size: 0.9rem;
   }
 
   .social-media-link {
