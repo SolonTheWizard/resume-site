@@ -24,7 +24,7 @@ const IndexPage = () => (
           </a>
           <a
             className="social-media-link"
-            href="www.linkedin.com/in/SamuelSuddath/"
+            href="https://www.linkedin.com/in/SamuelSuddath/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -43,18 +43,37 @@ const IndexPage = () => (
           <Link to="/portfolio/" className="directory-link">
             Portfolio
           </Link>
-          <button>Contact Me</button>
+          <button>Contact</button>
           <Link to="/aboutMe/" className="directory-link">
-            About Me
+            About
           </Link>
         </div>
         <div className="contact-info">
           {/*className={`${contactMe ? "" : " hidden"}`} */}
           <ul>
-            <li>Email: Srsuddath@gmail.com</li>
-            <li>Phone: 813-486-8098</li>
-            <li>LinkedIn: www.linkedin.com/in/SamuelSuddath/</li>
-            <li>Github: https://github.com/SolonTheWizard</li>
+            <li>Email: srsuddath@gmail.com</li>
+            <li>
+              LinkedIn:
+              <a
+                className="special-link"
+                href="https://www.linkedin.com/in/SamuelSuddath/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                https://www.linkedin.com/in/SamuelSuddath/
+              </a>
+            </li>
+            <li>
+              Github:
+              <a
+                className="special-link"
+                href="https://github.com/SolonTheWizard"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                https://github.com/SolonTheWizard
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,13 +81,14 @@ const IndexPage = () => (
   </Layout>
 )
 const Wrapper = styled.div`
+  display: flex;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-size: 16px;
   flex-grow: 1;
 
   .business-card {
@@ -103,7 +123,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-block-start: 4px;
     margin-block-end: 4px;
   }
@@ -114,6 +134,11 @@ const Wrapper = styled.div`
   li {
     margin: 3px;
     font-size: 0.9rem;
+  }
+  .special-link {
+    margin: 3px;
+    font-size: 0.9rem;
+    padding: 0;
   }
 
   .social-media-link {

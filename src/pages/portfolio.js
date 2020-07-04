@@ -18,7 +18,7 @@ const PortfolioPage = () => (
         <Link to="/portfolio/" className="selected-page menu-bar-link">
           __Portfolio__
         </Link>
-        <Link to="/aboutMe/" className="selected-page menu-bar-link">
+        <Link to="/aboutMe/" className="menu-bar-link">
           About Me
         </Link>
       </div>
@@ -151,6 +151,9 @@ const Wrapper = styled.div`
     width: 500px;
     height: 500px;
   }
+  .menu-bar-link {
+    color: #ffffff;
+  }
 
   h1 {
     padding-left: 75px;
@@ -180,6 +183,7 @@ const Wrapper = styled.div`
     width: 100%;
     font-family: sans-serif;
     text-decoration: underline;
+    color: #ffffff;
   }
 
   .project {
@@ -190,7 +194,7 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 90%;
     height: 500px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .project-details {
@@ -211,6 +215,8 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    margin: 0 10px;
+    border-radius: 5px;
   }
 
   .project-tags {

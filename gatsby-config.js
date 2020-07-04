@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/wizard.png`, // This path is relative to the root of the site.
+        icon: `src/images/wizard.ico`, // This path is relative to the root of the site.
       },
     },
     {

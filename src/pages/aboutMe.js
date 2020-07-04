@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import headshot from "../images/headshot.png"
 import SEO from "../global/seo"
 import Layout from "../global/layout"
 
@@ -23,6 +24,34 @@ const AboutMePage = () => (
       <div className="title">
         <h1>___About Me___________</h1>
       </div>
+      <div className="card">
+        <img src={headshot} alt="Picture of Me" />
+        <div className="about">
+          <p>
+            Sam Suddath is a motivated and creative software engineer based out
+            of Tampa, Florida. He graduated from the University of South Florida
+            in December of 2015 with his Bachelor's of Science in Computer
+            Science and a 3.4 GPA.
+          </p>
+          <p>
+            After graduation, Sam started his career as a Junior Software
+            Engineer for Lockheed Martin in Marietta, GA, where he worked for a
+            year. After his year at LM, he moved back to Tampa for an Avionics
+            Software Engineering position at CAE USA, where he has worked for 3
+            years now.
+          </p>
+          <p>
+            Since then, Sam has launched his career as a React Engineer,
+            spending nights and weekends taking courses, learning JavaScript,
+            and building apps.
+          </p>
+          <p>
+            When he isn't coding, Sam enjoys spending time with his wife Liz,
+            DM'ing and writing for his campaign, and tackling handy-man projects
+            around the house.
+          </p>
+        </div>
+      </div>
     </Wrapper>
   </Layout>
 )
@@ -38,6 +67,20 @@ const Wrapper = styled.div`
   font-size: 16px;
   flex-grow: 1;
 
+  .card {
+    display: flex;
+    flex-grow: 1;
+    background: #f4f7fb;
+    min-width: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+  }
   .menu-bar {
     display: flex;
     flex-direction: row;
@@ -46,6 +89,9 @@ const Wrapper = styled.div`
     padding: 40px 10px 10px;
     width: 100%;
     flex-grow: 1;
+  }
+  .selected-page {
+    text-decoration: underline;
   }
 
   a {
@@ -56,13 +102,6 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
-  .image-link {
-    padding: 0;
-    margin: 0;
-    width: 500px;
-    height: 500px;
-  }
-
   h1 {
     padding-left: 75px;
     margin: 0 0 2px 10px;
@@ -71,16 +110,14 @@ const Wrapper = styled.div`
     letter-spacing: 1px;
     word-spacing: 5px;
   }
-  h2 {
-    margin: 0 0 2px 10px;
-    font-size: 34px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-  }
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 40px;
+    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
   }
 
   .title {
@@ -90,79 +127,23 @@ const Wrapper = styled.div`
     width: 100%;
     font-family: sans-serif;
     text-decoration: underline;
+    color: #ffffff;
   }
-
-  .project {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: 20px;
-    padding: 10px 10px;
-    width: 90%;
-    height: 500px;
-    margin-bottom: 30px;
-  }
-
-  .project-details {
+  .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    background: #f4f7fb;
-    margin: 0 10px;
-    border-radius: 5px;
-  }
-
-  .project-image {
-    display: flex;
-    max-width: 500px;
-    max-height: 500px;
-    align-items: center;
-    justify-content: center;
-    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-  }
-
-  .project-tags {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
+    width: 500px;
+    margin: 20px 40px 20px;
+    padding: 10px 0 50px;
   }
-
-  .project-title {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    text-decoration: underline;
-    margin-top: 15px;
+  .menu-bar-link {
+    color: #ffffff;
   }
-
-  .selected-page {
-    text-decoration: underline;
-  }
-
-  span {
-    padding: 5px 15px;
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    margin: 0 10px 10px;
-  }
-
-  .description {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 98%;
-    text-indent: 15px;
-  }
-
-  li {
-    margin-bottom: 6px;
+  p {
+    margin-block-start: 7px;
+    margin-block-end: 7px;
   }
 `
 

@@ -6,22 +6,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #23d0fb; /* Old browsers */
+  background: #0ddaf5; /* Old browsers */
   background: -moz-linear-gradient(
     -45deg,
-    #0fc1ee 1%,
+    #0ddaf5 1%,
     #2958f5 100%
   ); /*FF3.6-15 */
   background: -webkit-linear-gradient(
     -45deg,
-    #0fc1ee 1%,
+    #0ddaf5 1%,
     #2958f5 100%
   ); /*Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     -45deg,
-    #0fc1ee 1%,
+    #0ddaf5 1%,
     #2958f5 100%
   ); /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /*
