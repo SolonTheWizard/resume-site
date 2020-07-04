@@ -43,8 +43,9 @@ const IndexPage = () => (
           <Link to="/portfolio/" className="directory-link">
             Portfolio
           </Link>
-          <Link to="/contact/" className="directory-link">
-            Contact
+          <button>Contact Me</button>
+          <Link to="/aboutMe/" className="directory-link">
+            About Me
           </Link>
         </div>
       </div>
@@ -103,6 +104,28 @@ const Wrapper = styled.div`
     padding: 8px 18px;
     font-size: 1rem;
     border-radius: 2px;
+  }
+
+  button {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 2px;
+    background: none;
+    border: 0 transparent;
+  }
+  button:hover {
+    background-color: #ffffff;
+    transition: ease 0.3s;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  button:focus {
+    outline: none;
   }
 
   .directory-link {

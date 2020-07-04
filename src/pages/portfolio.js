@@ -18,6 +18,9 @@ const PortfolioPage = () => (
         <Link to="/portfolio/" className="selected-page menu-bar-link">
           __Portfolio__
         </Link>
+        <Link to="/aboutMe/" className="selected-page menu-bar-link">
+          About Me
+        </Link>
       </div>
       <div className="title">
         <h1>___Portfolio___________</h1>
@@ -94,10 +97,18 @@ const PortfolioPage = () => (
             A "punny" game of hangman where the prompts are all dad jokes!
           </div>
           <ul>
-            <li> Detail 1</li>
-            <li> Detail 2</li>
-            <li> Detail 3</li>
-            <li> Detail 4</li>
+            <li>Built using Node.js and React</li>
+            <li>
+              Queries a public Dad Joke API for the Challenge and the Answer
+            </li>
+            <li>
+              Tracks correct and incorrect guessed letters and colors the
+              corresponding "keys" appropriately
+            </li>
+            <li>
+              Shows number of guesses remaining as you race to solve the puzzle
+              before your hangman is completed
+            </li>
           </ul>
         </div>
       </div>
@@ -114,6 +125,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   font-size: 16px;
+  flex-grow: 1;
 
   .menu-bar {
     display: flex;
@@ -126,11 +138,10 @@ const Wrapper = styled.div`
   }
 
   a {
-    padding: 5px 8px;
-    margin: 0 5px 15px;
+    margin: 5px 9px 15px;
     color: black;
     text-decoration: none;
-    width: 90px;
+    width: 105px;
     text-align: center;
   }
 
@@ -159,6 +170,7 @@ const Wrapper = styled.div`
   img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 5px;
   }
 
   .title {
@@ -188,7 +200,6 @@ const Wrapper = styled.div`
     width: 50%;
     background: #f4f7fb;
     margin: 0 10px;
-    border-radius: 5px;
   }
 
   .project-image {
