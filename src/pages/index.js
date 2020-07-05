@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -8,78 +8,102 @@ import "../global/styles.css"
 import SEO from "../global/seo"
 import Layout from "../global/layout"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Wrapper>
-      <div className="business-card">
-        <div className="external-links">
-          <a
-            className="social-media-link"
-            href="https://github.com/SolonTheWizard"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img className="social-media-link" src={github} alt="github link" />
-          </a>
-          <a
-            className="social-media-link"
-            href="https://www.linkedin.com/in/SamuelSuddath/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img
-              className="social-media-link"
-              src={linkedin}
-              alt="linkedin link"
-            />
-          </a>
-        </div>
-        <div className="info">
-          <h1 className="title">Samuel Suddath</h1>
-          <h3 className="subtitle">Front-End React Developer</h3>
-        </div>
-        <div className="internal-links">
-          <Link to="/portfolio/" className="directory-link">
-            Portfolio
-          </Link>
-          <button>Contact</button>
-          <Link to="/aboutMe/" className="directory-link">
-            About
-          </Link>
-        </div>
-        <div className="contact-info">
-          {/*className={`${contactMe ? "" : " hidden"}`} */}
-          <ul>
-            <li>Email: srsuddath@gmail.com</li>
-            <li>
-              LinkedIn:
+class IndexPage extends Component {
+  constructor(props) {
+    super(props)
+    // set initial state values
+    this.state = {
+      displayContactInfo: false,
+    }
+  }
+
+  toggleContactInfo = () => {
+    const { displayContactInfo } = this.state
+    this.setState({ displayContactInfo: !displayContactInfo })
+  }
+
+  render() {
+    const { displayContactInfo } = this.state
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <Wrapper>
+          <div className="business-card">
+            <div className="external-links">
               <a
-                className="special-link"
-                href="https://www.linkedin.com/in/SamuelSuddath/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                https://www.linkedin.com/in/SamuelSuddath/
-              </a>
-            </li>
-            <li>
-              Github:
-              <a
-                className="special-link"
+                className="social-media-link"
                 href="https://github.com/SolonTheWizard"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                https://github.com/SolonTheWizard
+                <img
+                  className="social-media-link"
+                  src={github}
+                  alt="github link"
+                />
               </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </Wrapper>
-  </Layout>
-)
+              <a
+                className="social-media-link"
+                href="https://www.linkedin.com/in/SamuelSuddath/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  className="social-media-link"
+                  src={linkedin}
+                  alt="linkedin link"
+                />
+              </a>
+            </div>
+            <div className="info">
+              <h1 className="title">Samuel Suddath</h1>
+              <h3 className="subtitle">Front-End React Developer</h3>
+            </div>
+            <div className="internal-links">
+              <Link to="/portfolio/" className="directory-link">
+                Portfolio
+              </Link>
+              <button onClick={this.toggleContactInfo}>Contact</button>
+              <Link to="/aboutMe/" className="directory-link">
+                About
+              </Link>
+            </div>
+            <div
+              className={`${displayContactInfo ? "contact-info" : "hidden"}`}
+            >
+              <ul>
+                <li>Email: srsuddath@gmail.com</li>
+                <li>
+                  LinkedIn:
+                  <a
+                    className="special-link"
+                    href="https://www.linkedin.com/in/SamuelSuddath/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    https://www.linkedin.com/in/SamuelSuddath/
+                  </a>
+                </li>
+                <li>
+                  Github:
+                  <a
+                    className="special-link"
+                    href="https://github.com/SolonTheWizard"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    https://github.com/SolonTheWizard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Wrapper>
+      </Layout>
+    )
+  }
+}
+
 const Wrapper = styled.div`
   display: flex;
   min-width: 100%;
@@ -126,6 +150,7 @@ const Wrapper = styled.div`
     align-items: flex-start;
     margin-block-start: 4px;
     margin-block-end: 4px;
+    min-width: 100%;
   }
   ul {
     list-style-type: none;
@@ -134,11 +159,13 @@ const Wrapper = styled.div`
   li {
     margin: 3px;
     font-size: 0.9rem;
+    color: #000000;
   }
   .special-link {
     margin: 3px;
     font-size: 0.9rem;
     padding: 0;
+    color: #000000;
   }
 
   .social-media-link {
@@ -149,7 +176,7 @@ const Wrapper = styled.div`
   }
 
   a {
-    color: black;
+    color: #525f7f;
     text-decoration: none;
     text-align: center;
     padding: 8px 18px;
@@ -158,7 +185,7 @@ const Wrapper = styled.div`
   }
 
   button {
-    color: black;
+    color: #525f7f;
     text-decoration: none;
     text-align: center;
     padding: 8px 18px;
@@ -217,6 +244,9 @@ const Wrapper = styled.div`
     align-items: flex-start;
     width: 600px;
     margin: 0 0 10px;
+  }
+  .hidden {
+    display: none;
   }
 `
 export default IndexPage
