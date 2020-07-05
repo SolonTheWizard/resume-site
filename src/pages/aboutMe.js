@@ -79,7 +79,6 @@ const Wrapper = styled.div`
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     margin-bottom: 20px;
-    margin-top: 10px;
   }
   .menu-bar {
     display: flex;
@@ -128,6 +127,7 @@ const Wrapper = styled.div`
     font-family: sans-serif;
     text-decoration: underline;
     color: #000000;
+    margin-bottom: 20px;
   }
   .about {
     display: flex;

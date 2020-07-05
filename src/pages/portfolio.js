@@ -184,17 +184,20 @@ const Wrapper = styled.div`
     font-family: sans-serif;
     text-decoration: underline;
     color: #000000;
+    margin-bottom: 20px;
   }
 
   .project {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 20px;
-    padding: 10px 10px;
+    margin: 0 20px;
+    padding: 20px 0px;
     width: 90%;
     height: 500px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f4f7fb;
   }
 
   .project-details {
@@ -202,7 +205,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
-    background: #f4f7fb;
     margin: 0 10px;
   }
 
