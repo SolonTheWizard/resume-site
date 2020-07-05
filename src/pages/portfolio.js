@@ -132,7 +132,7 @@ const Wrapper = styled.div`
     padding: 20px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
