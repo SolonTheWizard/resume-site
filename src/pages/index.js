@@ -1,29 +1,29 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import github from "../images/github.png"
-import linkedin from "../images/linkedin.png"
-import "../global/styles.css"
-import SEO from "../global/seo"
-import Layout from "../global/layout"
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
+import '../global/styles.css';
+import SEO from '../global/seo';
+import Layout from '../global/layout';
 
 class IndexPage extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     // set initial state values
     this.state = {
       displayContactInfo: false,
-    }
+    };
   }
 
   toggleContactInfo = () => {
-    const { displayContactInfo } = this.state
-    this.setState({ displayContactInfo: !displayContactInfo })
-  }
+    const { displayContactInfo } = this.state;
+    this.setState({ displayContactInfo: !displayContactInfo });
+  };
 
   render() {
-    const { displayContactInfo } = this.state
+    const { displayContactInfo } = this.state;
     return (
       <Layout>
         <SEO title="Home" />
@@ -69,7 +69,7 @@ class IndexPage extends Component {
               </Link>
             </div>
             <div
-              className={`${displayContactInfo ? "contact-info" : "hidden"}`}
+              className={`${displayContactInfo ? 'contact-info' : 'hidden'}`}
             >
               <ul>
                 <li>Email: srsuddath@gmail.com</li>
@@ -100,7 +100,7 @@ class IndexPage extends Component {
           </div>
         </Wrapper>
       </Layout>
-    )
+    );
   }
 }
 
@@ -248,5 +248,5 @@ const Wrapper = styled.div`
   .hidden {
     display: none;
   }
-`
-export default IndexPage
+`;
+export default IndexPage;

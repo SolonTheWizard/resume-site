@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import headshot from "../images/headshot.png"
-import SEO from "../global/seo"
-import Layout from "../global/layout"
+import headshot from '../images/headshot.png';
+import SEO from '../global/seo';
+import Layout from '../global/layout';
 
 const AboutMePage = () => (
   <Layout>
@@ -53,7 +53,7 @@ const AboutMePage = () => (
       </div>
     </Wrapper>
   </Layout>
-)
+);
 
 const Wrapper = styled.div`
   display: flex;
@@ -147,6 +147,6 @@ const Wrapper = styled.div`
     margin-block-end: 7px;
     color: #525f7f;
   }
-`
+`;
 
-export default AboutMePage
+export default AboutMePage;

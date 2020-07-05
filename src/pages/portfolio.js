@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
-import project1Image from "../images/project1Image.png"
-import project2Image from "../images/project2Image.png"
-import SEO from "../global/seo"
-import Layout from "../global/layout"
+import project1Image from '../images/project1Image.png';
+import project2Image from '../images/project2Image.png';
+import SEO from '../global/seo';
+import Layout from '../global/layout';
 
 const PortfolioPage = () => (
   <Layout>
@@ -38,7 +38,7 @@ const PortfolioPage = () => (
           </div>
           <div className="description">
             An easy way for a DM or Player to keep track of their chosen spells
-            or create new ones for {"D&D"} 5e
+            or create new ones for {'D&D'} 5e
           </div>
           <ul>
             <li>Built using Node.js and React</li>
@@ -114,7 +114,7 @@ const PortfolioPage = () => (
       </div>
     </Wrapper>
   </Layout>
-)
+);
 
 const Wrapper = styled.div`
   display: flex;
@@ -266,6 +266,6 @@ const Wrapper = styled.div`
     margin-bottom: 6px;
     color: #525f7f;
   }
-`
+`;
 
-export default PortfolioPage
+export default PortfolioPage;
