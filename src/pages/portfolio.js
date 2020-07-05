@@ -245,7 +245,7 @@ const Wrapper = styled.div`
     background-color: #2958f5;
     color: white;
     font-size: 14px;
-    margin: 0 10px 10px;
+    margin: 10px 10px 10px;
     -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
