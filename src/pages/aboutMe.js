@@ -21,9 +21,6 @@ const AboutMePage = () => (
           __About Me__
         </Link>
       </div>
-      <div className="title">
-        <h1>___About Me___________</h1>
-      </div>
       <div className="card">
         <img src={headshot} alt="My Headshot" />
         <div className="about">
@@ -88,6 +85,10 @@ const Wrapper = styled.div`
     padding: 40px 10px 10px;
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
   }
   .selected-page {
     text-decoration: underline;
@@ -101,14 +102,6 @@ const Wrapper = styled.div`
     text-align: center;
   }
 
-  h1 {
-    padding-left: 75px;
-    margin: 0 0 2px 10px;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-  }
   img {
     max-width: 300px;
     height: auto;
@@ -119,16 +112,6 @@ const Wrapper = styled.div`
     border-radius: 2px;
   }
 
-  .title {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    font-family: sans-serif;
-    text-decoration: underline;
-    color: #000000;
-    margin-bottom: 20px;
-  }
   .about {
     display: flex;
     flex-direction: column;

@@ -22,9 +22,6 @@ const PortfolioPage = () => (
           About Me
         </Link>
       </div>
-      <div className="title">
-        <h1>___Portfolio___________</h1>
-      </div>
       <div className="project">
         <div className="project-details">
           <div className="project-title">
@@ -135,6 +132,10 @@ const Wrapper = styled.div`
     padding: 40px 10px 10px;
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
   }
 
   a {
@@ -155,14 +156,6 @@ const Wrapper = styled.div`
     color: #000000;
   }
 
-  h1 {
-    padding-left: 75px;
-    margin: 0 0 2px 10px;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-  }
   h2 {
     margin: 0 0 2px 10px;
     font-size: 34px;
@@ -174,17 +167,6 @@ const Wrapper = styled.div`
     max-width: 100%;
     max-height: 100%;
     border-radius: 5px;
-  }
-
-  .title {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    font-family: sans-serif;
-    text-decoration: underline;
-    color: #000000;
-    margin-bottom: 20px;
   }
 
   .project {
