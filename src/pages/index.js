@@ -176,7 +176,7 @@ const Wrapper = styled.div`
   }
 
   a {
-    color: #525f7f;
+    color: #000000;
     text-decoration: none;
     text-align: center;
     padding: 8px 18px;
@@ -185,7 +185,7 @@ const Wrapper = styled.div`
   }
 
   button {
-    color: #525f7f;
+    color: #000000;
     text-decoration: none;
     text-align: center;
     padding: 8px 18px;

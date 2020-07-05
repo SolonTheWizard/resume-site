@@ -152,7 +152,7 @@ const Wrapper = styled.div`
     height: 500px;
   }
   .menu-bar-link {
-    color: #ffffff;
+    color: #000000;
   }
 
   h1 {
@@ -183,7 +183,7 @@ const Wrapper = styled.div`
     width: 100%;
     font-family: sans-serif;
     text-decoration: underline;
-    color: #ffffff;
+    color: #000000;
   }
 
   .project {

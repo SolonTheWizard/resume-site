@@ -127,7 +127,7 @@ const Wrapper = styled.div`
     width: 100%;
     font-family: sans-serif;
     text-decoration: underline;
-    color: #ffffff;
+    color: #000000;
   }
   .about {
     display: flex;
@@ -139,7 +139,7 @@ const Wrapper = styled.div`
     padding: 10px 0 50px;
   }
   .menu-bar-link {
-    color: #ffffff;
+    color: #000000;
   }
   p {
     text-align: center;
