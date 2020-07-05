@@ -129,11 +129,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -227,14 +227,14 @@ const Wrapper = styled.div`
 
   span {
     padding: 5px 15px;
-    background-color: #2958f5;
+    background-color: #3433ff;
     color: white;
     font-size: 14px;
     margin: 10px 10px 10px;
-    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
   }
 
   .description {

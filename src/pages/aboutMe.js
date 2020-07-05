@@ -68,11 +68,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
