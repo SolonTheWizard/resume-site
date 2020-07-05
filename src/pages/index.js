@@ -174,6 +174,7 @@ const Wrapper = styled.div`
     -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    color: #2958f5;
   }
   button:focus {
     outline: none;
@@ -187,6 +188,7 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    color: #2958f5;
   }
   .menu-bar-link {
     padding: 5px 0px;

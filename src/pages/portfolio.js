@@ -233,6 +233,7 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     text-decoration: underline;
     margin-top: 15px;
+    color: #000000;
   }
 
   .selected-page {
@@ -241,10 +242,14 @@ const Wrapper = styled.div`
 
   span {
     padding: 5px 15px;
-    background-color: black;
+    background-color: #2958f5;
     color: white;
     font-size: 14px;
     margin: 0 10px 10px;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
   }
 
   .description {
@@ -254,10 +259,12 @@ const Wrapper = styled.div`
     align-items: center;
     width: 98%;
     text-indent: 15px;
+    color: #525f7f;
   }
 
   li {
     margin-bottom: 6px;
+    color: #525f7f;
   }
 `
 
