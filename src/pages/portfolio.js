@@ -129,13 +129,14 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 40px 10px 10px;
+    padding: 20px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
   a {
@@ -153,7 +154,7 @@ const Wrapper = styled.div`
     height: 500px;
   }
   .menu-bar-link {
-    color: #000000;
+    color: #ffffff;
   }
 
   h2 {

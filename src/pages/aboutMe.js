@@ -63,6 +63,20 @@ const Wrapper = styled.div`
   font-size: 16px;
   flex-grow: 1;
 
+  .menu-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  }
   .card {
     display: flex;
     flex-grow: 1;
@@ -76,19 +90,6 @@ const Wrapper = styled.div`
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     margin-bottom: 20px;
-  }
-  .menu-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 10px 10px;
-    width: 100%;
-    flex-grow: 1;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
   }
   .selected-page {
     text-decoration: underline;
@@ -122,7 +123,7 @@ const Wrapper = styled.div`
     padding: 10px 0 50px;
   }
   .menu-bar-link {
-    color: #000000;
+    color: #ffffff;
   }
   p {
     text-align: center;
