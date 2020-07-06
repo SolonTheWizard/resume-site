@@ -16,7 +16,7 @@ const PortfolioPage = () => (
           Home
         </Link>
         <Link to="/portfolio/" className="selected-page menu-bar-link">
-          __Portfolio__
+          Portfolio
         </Link>
         <Link to="/aboutMe/" className="menu-bar-link">
           About Me
@@ -222,7 +222,7 @@ const Wrapper = styled.div`
   }
 
   .selected-page {
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff;
   }
 
   span {

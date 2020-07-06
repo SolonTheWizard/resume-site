@@ -18,7 +18,7 @@ const AboutMePage = () => (
           Portfolio
         </Link>
         <Link to="/aboutMe/" className="selected-page menu-bar-link">
-          __About Me__
+          About Me
         </Link>
       </div>
       <div className="card">
@@ -92,7 +92,7 @@ const Wrapper = styled.div`
     margin-bottom: 20px;
   }
   .selected-page {
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff;
   }
 
   a {
