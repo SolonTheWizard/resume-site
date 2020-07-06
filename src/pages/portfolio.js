@@ -25,7 +25,7 @@ const PortfolioPage = () => (
       <div className="project">
         <div className="project-details">
           <div className="project-title">
-            <h2>_Custom Spellbook_</h2>
+            <h2>Custom Spellbook</h2>
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -82,7 +82,7 @@ const PortfolioPage = () => (
         </div>
         <div className="project-details">
           <div className="project-title">
-            <h2>_Dad Joke Hangman_</h2>
+            <h2>Dad Joke Hangman</h2>
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -216,7 +216,7 @@ const Wrapper = styled.div`
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    text-decoration: underline;
+    border-bottom: 2px solid #000000;
     margin-top: 15px;
     color: #000000;
   }
