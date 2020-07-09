@@ -68,7 +68,7 @@ const PortfolioPage = () => (
         </div>
       </div>
 
-      <div className="project">
+      <div className="last project">
         <div className="project-image">
           <a
             className="image-link"
@@ -129,18 +129,18 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 18px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
   a {
-    margin: 5px 9px 15px;
+    margin: 5px 9px 5px;
     color: black;
     text-decoration: none;
     width: 105px;
@@ -155,6 +155,8 @@ const Wrapper = styled.div`
   }
   .menu-bar-link {
     color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   h2 {
@@ -167,7 +169,6 @@ const Wrapper = styled.div`
   img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5px;
   }
 
   .project {
@@ -175,12 +176,15 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     margin: 0 20px;
-    padding: 20px 0px;
-    width: 90%;
+    padding: 20px 10px;
+    max-width: 1000px;
     height: 500px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     border-radius: 5px;
     background: #f4f7fb;
+  }
+  .last {
+    margin-bottom: 80px;
   }
 
   .project-details {
@@ -221,15 +225,11 @@ const Wrapper = styled.div`
     color: #000000;
   }
 
-  .selected-page {
-    border-bottom: 1px solid #ffffff;
-  }
-
   span {
     padding: 5px 15px;
-    background-color: #3433ff;
+    background-color: #35c4f4;
     color: white;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin: 10px 10px 10px;
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -249,6 +249,8 @@ const Wrapper = styled.div`
 
   li {
     margin-bottom: 6px;
+    padding: 2px 0;
+    line-height: 17px;
     color: #525f7f;
   }
 `;

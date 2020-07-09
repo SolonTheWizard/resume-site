@@ -18,7 +18,7 @@ body {
   ); /*FF3.6-15 */
   background: -webkit-linear-gradient(
     -45deg,
-    #0ddaf5 1%,
+    #15px 1%,
     #2958f5 100%
   ); /*Chrome10-25,Safari5.1-6 */
   background: linear-gradient(

@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 16px;
   flex-grow: 1;
 
@@ -68,11 +68,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 18px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -89,14 +89,11 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px;
-  }
-  .selected-page {
-    border-bottom: 1px solid #ffffff;
+    margin-bottom: 50px;
   }
 
   a {
-    margin: 5px 9px 15px;
+    margin: 5px 9px 5px;
     color: black;
     text-decoration: none;
     width: 105px;
@@ -110,7 +107,6 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
   }
 
   .about {
@@ -120,10 +116,12 @@ const Wrapper = styled.div`
     justify-content: center;
     width: 500px;
     margin: 20px 40px 20px;
-    padding: 10px 0 50px;
+    padding: 10px 0 10px;
   }
   .menu-bar-link {
     color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
   p {
     text-align: center;

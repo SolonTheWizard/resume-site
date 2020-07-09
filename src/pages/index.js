@@ -57,7 +57,9 @@ class IndexPage extends Component {
             </div>
             <div className="info">
               <h1 className="title">Samuel Suddath</h1>
-              <h3 className="subtitle">Front-End React Developer</h3>
+              <h3 className="subtitle">
+                Software Engineer (React, Node, JavaScript)
+              </h3>
             </div>
             <div className="internal-links">
               <Link to="/portfolio/" className="directory-link">
@@ -72,27 +74,34 @@ class IndexPage extends Component {
               className={`${displayContactInfo ? 'contact-info' : 'hidden'}`}
             >
               <ul>
-                <li>Email: srsuddath@gmail.com</li>
+                <li>Email:</li>
+                <li>srsuddath@gmail.com</li>
+                <div className="spacer" />
+                <li>LinkedIn:</li>
                 <li>
-                  LinkedIn:
                   <a
                     className="special-link"
                     href="https://www.linkedin.com/in/SamuelSuddath/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    https://www.linkedin.com/in/SamuelSuddath/
+                    linkedin.com/in/SamuelSuddath/
                   </a>
                 </li>
+              </ul>
+              <ul>
+                <li>Phone:</li>
+                <li>813-486-8098</li>
+                <div className="spacer" />
+                <li>Github:</li>
                 <li>
-                  Github:
                   <a
                     className="special-link"
                     href="https://github.com/SolonTheWizard"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    https://github.com/SolonTheWizard
+                    github.com/SolonTheWizard
                   </a>
                 </li>
               </ul>
@@ -120,7 +129,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 30px;
+    padding: 30px 30px;
     margin-bottom: 80px;
     margin-top: 180px;
     width: 600px;
@@ -130,10 +139,9 @@ const Wrapper = styled.div`
   .internal-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 8px 0 8px;
-    min-width: 90%;
+    margin: 24px 0 8px;
   }
   .external-links {
     display: flex;
@@ -142,37 +150,43 @@ const Wrapper = styled.div`
     min-width: 100%;
     margin-top: 5px;
   }
-  .contact-.info,
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-block-start: 4px;
     margin-block-end: 4px;
-    min-width: 100%;
-  }
-  ul {
     list-style-type: none;
     padding-inline-start: 0;
+    width: 40%;
   }
   li {
-    margin: 3px;
-    font-size: 0.9rem;
-    color: #000000;
-  }
-  .special-link {
     margin: 3px;
     font-size: 0.9rem;
     padding: 0;
     color: #000000;
   }
 
+  .special-link {
+    margin: 3px;
+    font-size: 0.9rem;
+    padding: 0;
+    color: #3433ff;
+  }
+
   .social-media-link {
     width: 32px;
     height: 32px;
     padding: 0;
-    margin: 5px;
+    margin: 5px 10px;
   }
 
   a {
@@ -183,23 +197,24 @@ const Wrapper = styled.div`
     font-size: 1rem;
     border-radius: 2px;
   }
+  .spacer {
+    margin: 4px;
+  }
 
   button {
     color: #000000;
     text-decoration: none;
     text-align: center;
-    padding: 8px 18px;
+    padding: 8px 8px;
     font-size: 1rem;
     border-radius: 2px;
     background: none;
     border: 0 transparent;
+    width: 80px;
+    margin: 0 25px;
   }
   button:hover {
-    background-color: #ffffff;
     transition: ease 0.3s;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     color: #3433ff;
   }
@@ -208,13 +223,12 @@ const Wrapper = styled.div`
   }
 
   .directory-link {
+    width: 80px;
+    padding: 8px;
+    margin: 0 25px;
   }
   .directory-link:hover {
-    background-color: #ffffff;
     transition: ease 0.3s;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     color: #3433ff;
   }
   .menu-bar-link {
@@ -224,16 +238,16 @@ const Wrapper = styled.div`
   }
 
   .title {
-    padding: 40px 0 10px;
-    margin: 2px 4px 2px;
+    padding: 40px 10px 8px;
     font-size: 2.75rem;
     font-weight: 600;
+    margin: 0;
     /* ask kelson to help me change the font*/
   }
   .subtitle {
-    padding: 5px 0 10px;
-    margin: 2px 8px 8px;
-    font-size: 2rem;
+    padding: 8px 10px;
+    margin: 0 0 0 5px;
+    font-size: 1.8rem;
     font-weight: 400;
     /* ask kelson to help me change the font*/
   }
