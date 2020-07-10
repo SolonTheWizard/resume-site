@@ -71,12 +71,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 100vh;
     flex-grow: 1;
     padding-top: 50px;
     padding-bottom: 50px;
-    min-width: 100%;
-    min-height: 100%;
   }
 
   .menu-bar {

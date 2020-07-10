@@ -116,7 +116,7 @@ class IndexPage extends Component {
 const Wrapper = styled.div`
   display: flex;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
   flex-direction: column;
   align-items: center;
@@ -130,8 +130,8 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 30px 30px;
-    margin-bottom: 80px;
-    margin-top: 180px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     width: 600px;
     background: #f4f7fb;
   }
