@@ -133,7 +133,7 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 18px;
+    margin-bottom: 50px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -230,7 +230,7 @@ const Wrapper = styled.div`
     background-color: #35c4f4;
     color: white;
     font-size: 0.8rem;
-    margin: 10px 10px 10px;
+    margin: 15px 10px 15px;
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -243,7 +243,7 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     width: 98%;
-    text-indent: 15px;
+    text-align: left;
     color: #525f7f;
   }
 

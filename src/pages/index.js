@@ -139,16 +139,17 @@ const Wrapper = styled.div`
   .internal-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 24px 0 8px;
+    width: 100%;
   }
   .external-links {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+    align-items: center;
     min-width: 100%;
-    margin-top: 5px;
   }
   .contact-info {
     display: flex;
@@ -156,6 +157,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
   }
   ul {
     display: flex;
@@ -186,7 +188,7 @@ const Wrapper = styled.div`
     width: 32px;
     height: 32px;
     padding: 0;
-    margin: 5px 10px;
+    margin: 0 10px;
   }
 
   a {
@@ -247,7 +249,7 @@ const Wrapper = styled.div`
   .subtitle {
     padding: 8px 10px;
     margin: 0 0 0 5px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     /* ask kelson to help me change the font*/
   }
