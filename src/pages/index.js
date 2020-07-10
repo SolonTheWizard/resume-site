@@ -157,6 +157,8 @@ const Wrapper = styled.div`
     align-items: center;
     width: 100%;
     margin-top: 10px;
+    border-top: 1px solid black;
+    padding-top: 15px;
   }
   ul {
     display: flex;

@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 95%;
+    min-height: 100vh;
   }
 
   .menu-bar {
@@ -95,7 +95,8 @@ const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
+    margin-top: 50px;
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
