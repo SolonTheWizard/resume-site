@@ -92,7 +92,6 @@ const Wrapper = styled.div`
   }
   .card {
     display: flex;
-    flex-grow: 1;
     background: #f4f7fb;
     min-width: 500px;
     justify-content: center;
