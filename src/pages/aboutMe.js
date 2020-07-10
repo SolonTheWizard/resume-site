@@ -95,8 +95,8 @@ const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-top: 20px;
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
