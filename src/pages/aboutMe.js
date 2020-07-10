@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: 95%;
   }
 
   .menu-bar {
