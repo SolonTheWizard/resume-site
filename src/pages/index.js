@@ -208,7 +208,7 @@ const Wrapper = styled.div`
     text-decoration: none;
     text-align: center;
     padding: 8px 8px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 2px;
     background: none;
     border: 0 transparent;
@@ -227,6 +227,7 @@ const Wrapper = styled.div`
   .directory-link {
     width: 80px;
     padding: 8px;
+    font-size: 1.1rem;
     margin: 0 25px;
   }
   .directory-link:hover {
@@ -248,7 +249,7 @@ const Wrapper = styled.div`
   }
   .subtitle {
     padding: 8px 10px;
-    margin: 0 0 0 5px;
+    margin: 0;
     font-size: 1.5rem;
     font-weight: 400;
     /* ask kelson to help me change the font*/

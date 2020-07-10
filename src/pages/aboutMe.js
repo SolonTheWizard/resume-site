@@ -21,31 +21,34 @@ const AboutMePage = () => (
           About Me
         </Link>
       </div>
-      <div className="card">
-        <img src={headshot} alt="My Headshot" />
-        <div className="about">
-          <p>
-            Sam Suddath is a creative and driven software engineer based out of
-            Tampa, Florida. He graduated from the University of South Florida in
-            December of 2015 with his Bachelor's of Science in Computer Science.
-          </p>
-          <p>
-            After graduation, Sam started his career as a Junior Software
-            Engineer for Lockheed Martin in Marietta, GA, where he worked for a
-            year. After his year at Lockheed Martin, he moved back to Tampa for
-            an Avionics Software Engineering position at CAE USA, where he has
-            worked for the past 3 years now.
-          </p>
-          <p>
-            Since then, Sam has launched his career as a React Engineer,
-            spending nights and weekends learning new technologies, building
-            apps, and practicing his Web Dev skills.
-          </p>
-          <p>
-            When he isn't coding, Sam enjoys spending time with his wife Liz,
-            writing and DM'ing for his D&D campaign, and tackling handy-man
-            projects around the house.
-          </p>
+      <div className="background">
+        <div className="card">
+          <img src={headshot} alt="My Headshot" />
+          <div className="about">
+            <p>
+              Sam Suddath is a creative and driven software engineer based out
+              of Tampa, Florida. He graduated from the University of South
+              Florida in December of 2015 with his Bachelor's of Science in
+              Computer Science.
+            </p>
+            <p>
+              After graduation, Sam started his career as a Junior Software
+              Engineer for Lockheed Martin in Marietta, GA, where he worked for
+              a year. After his year at Lockheed Martin, he moved back to Tampa
+              for an Avionics Software Engineering position at CAE USA, where he
+              has worked for the past 3 years now.
+            </p>
+            <p>
+              Since then, Sam has launched his career as a React Engineer,
+              spending nights and weekends learning new technologies, building
+              apps, and practicing his Web Dev skills.
+            </p>
+            <p>
+              When he isn't coding, Sam enjoys spending time with his wife Liz,
+              writing and DM'ing for his D&D campaign, and tackling handy-man
+              projects around the house.
+            </p>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -63,6 +66,18 @@ const Wrapper = styled.div`
   font-size: 16px;
   flex-grow: 1;
 
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+  }
+
   .menu-bar {
     display: flex;
     flex-direction: row;
@@ -72,7 +87,6 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 18px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -89,7 +103,6 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    margin-bottom: 50px;
   }
 
   a {
