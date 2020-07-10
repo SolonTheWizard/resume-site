@@ -75,8 +75,8 @@ const Wrapper = styled.div`
     flex-grow: 1;
     padding-top: 20px;
     padding-bottom: 50px;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .menu-bar {
