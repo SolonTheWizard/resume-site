@@ -305,10 +305,11 @@ const Wrapper = styled.div`
       align-items: center;
       margin: 0 20px;
       padding: 20px 10px;
-      max-width: 600px;
+      max-width: 450px;
       margin-bottom: 50px;
       border-radius: 5px;
       background: #f4f7fb;
+      flex-wrap: wrap;
     }
     .last {
       margin-bottom: 80px;
@@ -319,7 +320,7 @@ const Wrapper = styled.div`
       flex-direction: column;
       align-items: center;
       width: 100%;
-      padding: 0 10px;
+      padding: 0;
     }
 
     .project-image {
@@ -341,6 +342,8 @@ const Wrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+      margin: 0;
+      padding: 0;
     }
 
     .project-title {
