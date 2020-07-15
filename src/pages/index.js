@@ -124,7 +124,7 @@ const Wrapper = styled.div`
   font-size: 16px;
   flex-grow: 1;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 751px) {
     /* For desktop: */
     .business-card {
       box-shadow: 5px 10px 23px rgba(31, 28, 87, 0.2);

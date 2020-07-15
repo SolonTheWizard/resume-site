@@ -69,17 +69,6 @@ const PortfolioPage = () => (
       </div>
 
       <div className="last project">
-        <div className="project-image">
-          <a
-            className="image-link"
-            href="
-            https://dadjoke-hangman.web.app/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src={project2Image} alt="project 2" />
-          </a>
-        </div>
         <div className="project-details">
           <div className="project-title">
             <h2>Dad Joke Hangman</h2>
@@ -107,6 +96,17 @@ const PortfolioPage = () => (
               before your hangman is completed
             </li>
           </ul>
+        </div>
+        <div className="project-image">
+          <a
+            className="image-link"
+            href="
+            https://dadjoke-hangman.web.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={project2Image} alt="project 2" />
+          </a>
         </div>
       </div>
     </Wrapper>
@@ -139,119 +139,247 @@ const Wrapper = styled.div`
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
-  a {
-    margin: 5px 9px 5px;
-    color: black;
-    text-decoration: none;
-    width: 105px;
-    text-align: center;
+  @media only screen and (min-width: 751px) {
+    /* For desktop: */
+
+    a {
+      margin: 5px 9px 5px;
+      color: black;
+      text-decoration: none;
+      width: 105px;
+      text-align: center;
+    }
+
+    .image-link {
+      padding: 0;
+      margin: 0;
+      width: 500px;
+      height: 500px;
+    }
+    .menu-bar-link {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    h2 {
+      margin: 0 0 2px 10px;
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 20px;
+      padding: 20px 10px;
+      max-width: 1000px;
+      height: 500px;
+      margin-bottom: 50px;
+      border-radius: 5px;
+      background: #f4f7fb;
+    }
+    .project:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+    .last {
+      margin-bottom: 80px;
+    }
+
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 0 10px;
+    }
+
+    .project-image {
+      display: flex;
+      max-width: 500px;
+      max-height: 500px;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      margin: 0 10px;
+      border-radius: 5px;
+    }
+
+    .project-tags {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .project-title {
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      border-bottom: 2px solid #000000;
+      margin-top: 15px;
+      color: #000000;
+    }
+
+    span {
+      padding: 5px 15px;
+      background-color: #35c4f4;
+      color: white;
+      font-size: 0.8rem;
+      margin: 15px 10px 15px;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 98%;
+      text-align: left;
+      color: #525f7f;
+    }
+
+    li {
+      margin-bottom: 6px;
+      padding: 2px 0;
+      line-height: 17px;
+      color: #525f7f;
+    }
   }
 
-  .image-link {
-    padding: 0;
-    margin: 0;
-    width: 500px;
-    height: 500px;
-  }
-  .menu-bar-link {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
+  @media only screen and (max-width: 750px) {
+    /* For mobile: */
 
-  h2 {
-    margin: 0 0 2px 10px;
-    font-size: 34px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-  }
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+    a {
+      margin: 5px 9px 5px;
+      color: black;
+      text-decoration: none;
+      width: 105px;
+      text-align: center;
+    }
 
-  .project {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 20px;
-    padding: 20px 10px;
-    max-width: 1000px;
-    height: 500px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    background: #f4f7fb;
-  }
-  .last {
-    margin-bottom: 80px;
-  }
+    .image-link {
+      padding: 0;
+      margin: 0;
+      width: 350px;
+      height: 350px;
+    }
+    .menu-bar-link {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
 
-  .project-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: 0 10px;
-  }
+    h2 {
+      margin: 0 10px;
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
 
-  .project-image {
-    display: flex;
-    max-width: 500px;
-    max-height: 500px;
-    align-items: center;
-    justify-content: center;
-    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    margin: 0 10px;
-    border-radius: 5px;
-  }
+    .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px;
+      padding: 20px 10px;
+      max-width: 600px;
+      margin-bottom: 50px;
+      border-radius: 5px;
+      background: #f4f7fb;
+    }
+    .last {
+      margin-bottom: 80px;
+    }
 
-  .project-tags {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+    }
 
-  .project-title {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    border-bottom: 2px solid #000000;
-    margin-top: 15px;
-    color: #000000;
-  }
+    .project-image {
+      display: flex;
+      width: 350px;
+      height: 350px;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      margin: 0 10px;
+      border-radius: 5px;
+    }
 
-  span {
-    padding: 5px 15px;
-    background-color: #35c4f4;
-    color: white;
-    font-size: 0.8rem;
-    margin: 15px 10px 15px;
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
-  }
+    .project-tags {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
-  .description {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 98%;
-    text-align: left;
-    color: #525f7f;
-  }
+    .project-title {
+      display: flex;
+      width: 95%;
+      justify-content: flex-start;
+      border-bottom: 2px solid #000000;
+      margin-top: 15px;
+      color: #000000;
+    }
 
-  li {
-    margin-bottom: 6px;
-    padding: 2px 0;
-    line-height: 17px;
-    color: #525f7f;
+    span {
+      padding: 5px 15px;
+      background-color: #35c4f4;
+      color: white;
+      font-size: 0.8rem;
+      margin: 15px 10px 15px;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 98%;
+      text-align: left;
+      color: #525f7f;
+    }
+
+    li {
+      margin-bottom: 6px;
+      padding: 2px 0;
+      line-height: 17px;
+      color: #525f7f;
+    }
   }
 `;
 
