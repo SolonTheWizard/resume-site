@@ -318,6 +318,7 @@ const Wrapper = styled.div`
       list-style-type: none;
       padding-inline-start: 0;
       width: 100%;
+      margin: 3px;
     }
     li {
       text-align: center;
