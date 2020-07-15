@@ -365,7 +365,7 @@ const Wrapper = styled.div`
       background: none;
       border: 0 transparent;
       width: 80px;
-      margin: 0 25px;
+      margin: 0 8px;
     }
     button:hover {
       transition: ease 0.3s;
@@ -380,7 +380,7 @@ const Wrapper = styled.div`
       width: 60px;
       padding: 8px;
       font-size: 1.1rem;
-      margin: 0 15px;
+      margin: 0 8px;
     }
     .directory-link:hover {
       transition: ease 0.3s;
