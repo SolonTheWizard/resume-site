@@ -269,7 +269,7 @@ const Wrapper = styled.div`
       display: none;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 750px) {
     /* For mobile: */
     .business-card {
       box-shadow: 5px 10px 23px rgba(31, 28, 87, 0.2);
