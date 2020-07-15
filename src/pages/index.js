@@ -324,6 +324,7 @@ const Wrapper = styled.div`
       text-align: center;
       margin: 3px;
       font-size: 0.9rem;
+      font-weight: 300;
       padding: 0;
       color: #000000;
       width: 100%;
@@ -393,7 +394,7 @@ const Wrapper = styled.div`
     }
 
     .title {
-      padding: 40px 10px 8px;
+      padding: 20px 10px 8px;
       font-size: 2.75rem;
       font-weight: 600;
       margin: 0;
