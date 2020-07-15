@@ -323,7 +323,7 @@ const Wrapper = styled.div`
       text-align: center;
       margin: 3px;
       font-size: 0.9rem;
-      font-weight: 350;
+      font-weight: 400;
       padding: 0;
       color: #000000;
       width: 100%;
