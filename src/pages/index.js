@@ -277,9 +277,9 @@ const Wrapper = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 30px 30px;
-      margin-bottom: 50px;
-      width: 325px;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      width: 300px;
       background: #f4f7fb;
     }
 
