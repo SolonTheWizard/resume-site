@@ -304,9 +304,8 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-top: 10px;
       border-top: 1px solid black;
-      padding-top: 15px;
+      padding-top: 10px;
     }
     ul {
       display: flex;
@@ -324,7 +323,7 @@ const Wrapper = styled.div`
       text-align: center;
       margin: 3px;
       font-size: 0.9rem;
-      font-weight: 300;
+      font-weight: 350;
       padding: 0;
       color: #000000;
       width: 100%;
