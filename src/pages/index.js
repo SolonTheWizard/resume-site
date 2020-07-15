@@ -313,17 +313,19 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-block-start: 4px;
-      margin-block-end: 4px;
+      margin-block-start: 0;
+      margin-block-end: 0;
       list-style-type: none;
       padding-inline-start: 0;
-      width: 40%;
+      width: 100%;
     }
     li {
+      text-align: center;
       margin: 3px;
       font-size: 0.9rem;
       padding: 0;
       color: #000000;
+      width: 100%;
     }
 
     .special-link {
@@ -374,10 +376,10 @@ const Wrapper = styled.div`
     }
 
     .directory-link {
-      width: 80px;
+      width: 60px;
       padding: 8px;
       font-size: 1.1rem;
-      margin: 0 25px;
+      margin: 0 15px;
     }
     .directory-link:hover {
       transition: ease 0.3s;
@@ -401,7 +403,7 @@ const Wrapper = styled.div`
       margin: 0;
       font-size: 1.5rem;
       font-weight: 400;
-      /* ask kelson to help me change the font*/
+      width: 275px;
     }
 
     .info {
