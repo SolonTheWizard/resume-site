@@ -275,8 +275,8 @@ const Wrapper = styled.div`
     .image-link {
       padding: 0;
       margin: 0;
-      width: 350px;
-      height: 350px;
+      width: 375px;
+      height: 375px;
     }
     .menu-bar-link {
       color: #ffffff;
@@ -325,8 +325,8 @@ const Wrapper = styled.div`
 
     .project-image {
       display: flex;
-      width: 350px;
-      height: 350px;
+      max-width: 375px;
+      max-height: 375px;
       align-items: center;
       justify-content: center;
       -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
@@ -334,6 +334,7 @@ const Wrapper = styled.div`
       box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       margin: 0 10px;
       border-radius: 5px;
+      margin-bottom: 15px;
     }
 
     .project-tags {
