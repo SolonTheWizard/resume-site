@@ -77,6 +77,21 @@ const Wrapper = styled.div`
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
+  .menu-bar-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 40px;
+    -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+  }
+
   @media only screen and (min-width: 751px) {
     /* For desktop: */
     .card {
@@ -102,15 +117,6 @@ const Wrapper = styled.div`
       text-align: center;
     }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      margin-top: 40px;
-      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    }
-
     .about {
       display: flex;
       flex-direction: column;
@@ -120,15 +126,10 @@ const Wrapper = styled.div`
       margin: 20px 40px 20px;
       padding: 10px 0 10px;
     }
-    .menu-bar-link {
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
     p {
       text-align: center;
-      margin-block-start: 7px;
-      margin-block-end: 7px;
+      margin-block-start: 8px;
+      margin-block-end: 8px;
       color: #525f7f;
     }
   }
@@ -138,7 +139,7 @@ const Wrapper = styled.div`
     .card {
       display: flex;
       background: #f4f7fb;
-      max-width: 88%;
+      max-width: 85%;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -158,33 +159,19 @@ const Wrapper = styled.div`
       text-align: center;
     }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      margin-top: 40px;
-      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-    }
-
     .about {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 500px;
+      width: 85%;
       margin: 20px 40px 20px;
       padding: 10px 0 10px;
     }
-    .menu-bar-link {
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
     p {
       text-align: center;
-      margin-block-start: 7px;
-      margin-block-end: 7px;
+      margin-block-start: 8px;
+      margin-block-end: 8px;
       color: #525f7f;
     }
   }

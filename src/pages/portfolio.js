@@ -139,6 +139,12 @@ const Wrapper = styled.div`
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   }
 
+  .menu-bar-link {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
   @media only screen and (min-width: 751px) {
     /* For desktop: */
 
@@ -148,12 +154,6 @@ const Wrapper = styled.div`
       text-decoration: none;
       width: 105px;
       text-align: center;
-    }
-
-    .menu-bar-link {
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 300;
     }
 
     h2 {
@@ -291,11 +291,6 @@ const Wrapper = styled.div`
       width: 360px;
       height: 360px;
     }
-    .menu-bar-link {
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
 
     .project-title {
       display: flex;
@@ -328,7 +323,7 @@ const Wrapper = styled.div`
       margin-left: 25px;
       margin-right: 25px;
       padding: 15px 10px 20px 10px;
-      max-width: 88%;
+      max-width: 85%;
       margin-bottom: 50px;
       border-radius: 5px;
       background: #f4f7fb;
