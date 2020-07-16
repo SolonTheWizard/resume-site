@@ -140,7 +140,10 @@ const Wrapper = styled.div`
     .card {
       display: flex;
       background: #f4f7fb;
-      max-width: 88%;
+      max-width: 85%;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding: 15px 10px 20px 10px;
       justify-content: center;
       align-items: center;
       flex-direction: column;
