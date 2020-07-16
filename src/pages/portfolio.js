@@ -288,8 +288,8 @@ const Wrapper = styled.div`
     .image-link {
       padding: 0;
       margin: 0;
-      width: 350px;
-      height: 350px;
+      width: 340px;
+      height: 340px;
     }
 
     .project-title {
@@ -345,8 +345,8 @@ const Wrapper = styled.div`
 
     .project-image {
       display: flex;
-      max-width: 350px;
-      max-height: 350px;
+      max-width: 340px;
+      max-height: 340px;
       align-items: center;
       justify-content: center;
       -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
