@@ -72,6 +72,7 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 40px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -103,7 +104,6 @@ const Wrapper = styled.div`
       flex-direction: column;
       border-radius: 5px;
       margin-bottom: 70px;
-      margin-top: 20px;
       -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
@@ -139,7 +139,7 @@ const Wrapper = styled.div`
     .card {
       display: flex;
       background: #f4f7fb;
-      max-width: 85%;
+      max-width: 88%;
       justify-content: center;
       align-items: center;
       flex-direction: column;
