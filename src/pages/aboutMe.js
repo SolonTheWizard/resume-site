@@ -77,6 +77,7 @@ const Wrapper = styled.div`
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(-45deg, #0ddaf5 1%, #2958f5);
   }
 
   .menu-bar-link {
@@ -175,7 +176,7 @@ const Wrapper = styled.div`
       text-align: center;
       margin-block-start: 8px;
       margin-block-end: 8px;
-      color: #525f7f;
+      color: #444444;
     }
   }
 `;
