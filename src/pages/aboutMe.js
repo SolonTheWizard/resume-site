@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 16px;
   flex-grow: 1;
 
@@ -145,7 +145,6 @@ const Wrapper = styled.div`
       flex-direction: column;
       border-radius: 5px;
       margin-bottom: 35px;
-      margin-top: 20px;
       -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
