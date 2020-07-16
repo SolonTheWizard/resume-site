@@ -220,6 +220,7 @@ const Wrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+      flex-wrap: wrap;
     }
 
     .project-title {
@@ -352,11 +353,15 @@ const Wrapper = styled.div`
     .project-tags {
       display: flex;
       width: 100%;
+      flex-grow: 1;
+      flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       margin: 0;
       padding: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     span {
@@ -364,7 +369,7 @@ const Wrapper = styled.div`
       background-color: #35c4f4;
       color: white;
       font-size: 0.8rem;
-      margin: 15px 10px 15px;
+      margin: 5px 10px 5px;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -376,7 +381,7 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 100%;
+      width: 95%;
       padding: 0 20px;
       text-align: left;
       color: #525f7f;
