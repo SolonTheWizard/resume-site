@@ -313,10 +313,10 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 25px;
+      margin-right: 25px;
       padding: 15px 10px 20px 10px;
-      max-width: 90%;
+      max-width: 88%;
       margin-bottom: 50px;
       border-radius: 5px;
       background: #f4f7fb;
