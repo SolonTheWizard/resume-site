@@ -116,7 +116,7 @@ const PortfolioPage = () => (
 const Wrapper = styled.div`
   display: flex;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
   flex-direction: column;
   align-items: center;
@@ -150,12 +150,6 @@ const Wrapper = styled.div`
       text-align: center;
     }
 
-    .image-link {
-      padding: 0;
-      margin: 0;
-      width: 500px;
-      height: 500px;
-    }
     .menu-bar-link {
       color: #ffffff;
       font-size: 1.2rem;
@@ -169,10 +163,6 @@ const Wrapper = styled.div`
       letter-spacing: 1px;
       word-spacing: 5px;
     }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
 
     .project {
       display: flex;
@@ -181,7 +171,7 @@ const Wrapper = styled.div`
       margin: 0 20px;
       padding: 20px 10px;
       max-width: 1000px;
-      height: 500px;
+      max-height: 600px;
       margin-bottom: 50px;
       border-radius: 5px;
       background: #f4f7fb;
@@ -203,24 +193,46 @@ const Wrapper = styled.div`
 
     .project-image {
       display: flex;
-      max-width: 500px;
-      max-height: 500px;
+      width: 100%;
+      max-height: 100vw;
       align-items: center;
       justify-content: center;
+      margin: 0 10px;
+      border-radius: 5px;
+      width: auto;
+      height: auto;
+    }
+    .image-link {
+      padding: 0;
+      margin: 0;
+      max-width: 500px;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
       -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      margin: 0 10px;
-      border-radius: 5px;
     }
 
     .project-tags {
       display: flex;
       width: 100%;
+      flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .project-title {
@@ -237,7 +249,7 @@ const Wrapper = styled.div`
       background-color: #35c4f4;
       color: white;
       font-size: 0.8rem;
-      margin: 15px 10px 15px;
+      margin: 5px 10px 5px;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -353,7 +365,6 @@ const Wrapper = styled.div`
     .project-tags {
       display: flex;
       width: 100%;
-      flex-grow: 1;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
