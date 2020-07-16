@@ -284,8 +284,17 @@ const Wrapper = styled.div`
       font-weight: 300;
     }
 
+    .project-title {
+      display: flex;
+      width: 90%;
+      justify-content: flex-start;
+      border-bottom: 2px solid #000000;
+      margin-top: 15px;
+      color: #000000;
+    }
+
     h2 {
-      margin: 0 10px;
+      margin: 0;
       font-size: 34px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -303,9 +312,10 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 20px;
-      padding: 20px 10px;
-      max-width: 400px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 15px 10px 20px 10px;
+      max-width: 90%;
       margin-bottom: 50px;
       border-radius: 5px;
       background: #f4f7fb;
@@ -319,8 +329,10 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
-      padding: 0;
+      max-width: 100%;
+      flex-grow: 1;
+      padding: 0 5px;
+      margin: 0;
     }
 
     .project-image {
@@ -347,15 +359,6 @@ const Wrapper = styled.div`
       padding: 0;
     }
 
-    .project-title {
-      display: flex;
-      width: 95%;
-      justify-content: flex-start;
-      border-bottom: 2px solid #000000;
-      margin-top: 15px;
-      color: #000000;
-    }
-
     span {
       padding: 5px 15px;
       background-color: #35c4f4;
@@ -373,14 +376,15 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 98%;
+      width: 100%;
+      padding: 0 20px;
       text-align: left;
       color: #525f7f;
     }
 
     li {
       margin-bottom: 6px;
-      padding: 2px 0;
+      padding: 2px 20px;
       line-height: 17px;
       color: #525f7f;
     }
