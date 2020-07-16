@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-size: 16px;
   flex-grow: 1;
 
@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 10px 10px;
     width: 100%;
-    height: 50px;
+    max-height: 50px;
     flex-grow: 1;
     margin-bottom: 40px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
