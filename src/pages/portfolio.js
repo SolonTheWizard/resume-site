@@ -193,6 +193,17 @@ const Wrapper = styled.div`
       margin: 0 10px;
     }
 
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    }
     .project-image {
       display: flex;
       width: 100%;
@@ -211,17 +222,6 @@ const Wrapper = styled.div`
       max-height: 100%;
       width: auto;
       height: auto;
-    }
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
     }
 
     .project-tags {
@@ -287,13 +287,6 @@ const Wrapper = styled.div`
       text-align: center;
     }
 
-    .image-link {
-      padding: 0;
-      margin: 0;
-      width: 340px;
-      height: 340px;
-    }
-
     .project-title {
       display: flex;
       width: 90%;
@@ -315,6 +308,33 @@ const Wrapper = styled.div`
     img {
       max-width: 100%;
       max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    }
+    .project-image {
+      display: flex;
+      max-width: 100%;
+      max-height: 100vw;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      width: auto;
+      height: auto;
+    }
+    .image-link {
+      padding: 0;
+      margin: 0;
+      max-width: 320px;
+      max-height: 100%;
+      width: auto;
+      height: auto;
     }
 
     .project {
@@ -343,20 +363,6 @@ const Wrapper = styled.div`
       flex-grow: 1;
       padding: 0 5px;
       margin: 0;
-    }
-
-    .project-image {
-      display: flex;
-      max-width: 340px;
-      max-height: 340px;
-      align-items: center;
-      justify-content: center;
-      -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
-      margin: 0 10px;
-      border-radius: 5px;
-      margin-bottom: 15px;
     }
 
     .project-tags {
