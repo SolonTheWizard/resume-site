@@ -71,7 +71,7 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 10px 10px;
     width: 100%;
-    max-height: 50px;
+    max-height: 55px;
     flex-grow: 1;
     margin-bottom: 40px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);

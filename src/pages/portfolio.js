@@ -133,7 +133,7 @@ const Wrapper = styled.div`
     padding: 10px 10px;
     width: 100%;
     flex-grow: 1;
-    max-height: 50px;
+    max-height: 55px;
     margin-bottom: 40px;
     -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -331,7 +331,7 @@ const Wrapper = styled.div`
     .image-link {
       padding: 0;
       margin: 0;
-      max-width: 320px;
+      max-width: 350px;
       max-height: 100%;
       width: auto;
       height: auto;
