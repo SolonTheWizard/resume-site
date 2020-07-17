@@ -279,7 +279,7 @@ const Wrapper = styled.div`
       justify-content: center;
       padding: 20px 20px;
       margin-bottom: 75px;
-      width: 300px;
+      max-width: 300px;
       background: #f4f7fb;
     }
 

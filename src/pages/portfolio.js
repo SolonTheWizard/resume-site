@@ -120,7 +120,7 @@ const Wrapper = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-size: 16px;
   flex-grow: 1;
 

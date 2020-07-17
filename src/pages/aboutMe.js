@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   margin: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-size: 16px;
   flex-grow: 1;
 
@@ -87,7 +87,8 @@ const Wrapper = styled.div`
   }
 
   img {
-    max-width: 300px;
+    width: 80%;
+    max-width: 350px;
     height: auto;
     margin-top: 40px;
     -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
