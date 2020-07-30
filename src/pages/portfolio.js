@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import project1Image from '../images/project1Image.png';
 import project2Image from '../images/project2Image.png';
+import project3Image from '../images/project3Image.png';
 import SEO from '../global/seo';
 import Layout from '../global/layout';
 
@@ -21,6 +22,48 @@ const PortfolioPage = () => (
         <Link to="/aboutMe/" className="menu-bar-link">
           About Me
         </Link>
+      </div>
+
+      <div className="project">
+        <div className="project-details">
+          <div className="project-title">
+            <h2>Homebar.io</h2>
+          </div>
+          <div className="project-tags">
+            <span>React</span>
+            <span>Redux</span>
+            <span>Node.js</span>
+            <span>Firebase Auth</span>
+          </div>
+          <div className="description">
+            An intuitive and streamlined way for Mixologists and Collector's
+            to manage their home bar inventory, recipes, and wish list
+          </div>
+          <ul>
+            <li>Built using Node.js and React</li>
+            <li>Uses Google Firebase Authentication and Database features</li>
+            <li>Allows users to log in and manage their persistent inventory and wishlists </li>
+            <li>
+              Search a database of existing bottles, or create your own custom bottles to match your home bar exactly
+            </li>
+            <li>
+              Compare purchase prices across users and state minimums to ensure you get the best deal
+            </li>
+            <li>
+              Save tasting notes, reviews, and recipes for each bottle
+            </li>
+          </ul>
+        </div>
+        <div className="project-image">
+          <a
+            className="image-link"
+            href="https://homebar.io/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={project3Image} alt="project 3" />
+          </a>
+        </div>
       </div>
       <div className="project">
         <div className="project-details">
@@ -178,7 +221,7 @@ const Wrapper = styled.div`
       border-radius: 5px;
       background: #f4f7fb;
     }
-    .project:nth-of-type(even) {
+    .project:nth-of-type(odd) {
       flex-direction: row-reverse;
     }
     .last {
