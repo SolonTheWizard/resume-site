@@ -4,6 +4,7 @@ module.exports = {
     description: `This is a all in one information hub for everything you need to know about Sam Suddath `,
     author: `@SolonTheWizard`,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -31,6 +32,20 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }],
+          },
+        },
       },
     },
     {

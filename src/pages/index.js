@@ -57,9 +57,9 @@ class IndexPage extends Component {
             </div>
             <div className="info">
               <h1 className="title">Samuel Suddath</h1>
-              <h3 className="subtitle">
+              <h2 className="subtitle">
                 Software Engineer (React, Node, JavaScript)
-              </h3>
+              </h2>
             </div>
             <div className="internal-links">
               <Link to="/portfolio/" className="directory-link">
