@@ -37,6 +37,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host: 'https://www.solonthewizard.com',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
