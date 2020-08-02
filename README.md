@@ -1,7 +1,7 @@
 
 
 # Title Sam Suddath's (SolonTheWizard) Portfolio
-<img alt="logo" src="https://github.com/SolonTheWizard/resume-site/raw/master/public/icons/icon-192x192.png" style="max-height: 40px">
+<img alt="logo" src="https://github.com/SolonTheWizard/resume-site/raw/master/documentation/icon-192x192.png" style="max-height: 40px">
 
 This portofolio site displays past projects, relevant contact info, and a little bit of history about Sam Suddath
 
