@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://www.SolonTheWizard.com',
     title: `Sam Suddath's Portfolio`,
     description: `This is a all in one information hub for everything you need to know about Sam Suddath `,
     author: `@SolonTheWizard`,
@@ -37,7 +38,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.solonthewizard.com',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
