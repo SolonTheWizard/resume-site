@@ -97,6 +97,14 @@ const PortfolioPage = () => (
               When spells are deleted they are temporarily stored for an easy
               "quick-restore" feature
             </li>
+            <li>
+              <a
+                className="project-github-link"
+                href="https://github.com/SolonTheWizard/custom-spellbook"
+                target="_blank"
+                rel="noreferrer noopener"
+              >Link to Github Repository</a>
+              </li>
           </ul>
         </div>
         <div className="project-image">
@@ -138,6 +146,14 @@ const PortfolioPage = () => (
               Shows number of guesses remaining as you race to solve the puzzle
               before your hangman is completed
             </li>
+          <li>
+              <a
+                className="project-github-link"
+                href="https://github.com/SolonTheWizard/hangman-game"
+                target="_blank"
+                rel="noreferrer noopener"
+              >Link to Github Repository</a>
+              </li>
           </ul>
         </div>
         <div className="project-image">
@@ -189,6 +205,21 @@ const Wrapper = styled.div`
     font-size: 1.2rem;
     font-weight: 300;
   }
+
+  .project-github-link {
+      padding: 2px 0;
+      line-height: 17px;
+      color: #3433ff;
+      margin: 0;
+  }
+
+  .project-github-link:hover {
+      transition: ease 0.3s;
+      cursor: pointer;
+      color: #444444;
+    }
+
+
 
   @media only screen and (min-width: 751px) {
     /* For desktop: */
@@ -273,7 +304,7 @@ const Wrapper = styled.div`
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       margin: 0;
       padding: 0;
       margin-top: 10px;
