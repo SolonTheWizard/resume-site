@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import project1Image from '../images/project1Image.png';
 import project2Image from '../images/project2Image.png';
 import project3Image from '../images/project3Image.png';
+import github from '../images/github.png';
 import SEO from '../global/seo';
 import Layout from '../global/layout';
 
@@ -69,6 +70,18 @@ const PortfolioPage = () => (
         <div className="project-details">
           <div className="project-title">
             <h2>Custom Spellbook</h2>
+            <a
+                className="social-media-link"
+                href="https://github.com/SolonTheWizard/custom-spellbook/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  className="social-media-link"
+                  src={github}
+                  alt="github link"
+                />
+              </a>
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -97,14 +110,6 @@ const PortfolioPage = () => (
               When spells are deleted they are temporarily stored for an easy
               "quick-restore" feature
             </li>
-            <li>
-              <a
-                className="project-github-link"
-                href="https://github.com/SolonTheWizard/custom-spellbook"
-                target="_blank"
-                rel="noreferrer noopener"
-              >Link to Github Repository</a>
-              </li>
           </ul>
         </div>
         <div className="project-image">
@@ -123,6 +128,19 @@ const PortfolioPage = () => (
         <div className="project-details">
           <div className="project-title">
             <h2>Dad Joke Hangman</h2>
+            <a
+                className="social-media-link"
+                href="https://github.com/SolonTheWizard/hangman-game/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  className="social-media-link"
+                  src={github}
+                  alt="github link"
+                />
+              </a>
+
           </div>
           <div className="project-tags">
             <span>React</span>
@@ -146,14 +164,6 @@ const PortfolioPage = () => (
               Shows number of guesses remaining as you race to solve the puzzle
               before your hangman is completed
             </li>
-          <li>
-              <a
-                className="project-github-link"
-                href="https://github.com/SolonTheWizard/hangman-game"
-                target="_blank"
-                rel="noreferrer noopener"
-              >Link to Github Repository</a>
-              </li>
           </ul>
         </div>
         <div className="project-image">
@@ -206,17 +216,20 @@ const Wrapper = styled.div`
     font-weight: 300;
   }
 
-  .project-github-link {
-      padding: 2px 0;
-      line-height: 17px;
-      color: #3433ff;
-      margin: 0;
-  }
 
-  .project-github-link:hover {
-      transition: ease 0.3s;
-      cursor: pointer;
-      color: #444444;
+  .social-media-link {
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      margin: 0;
+
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    ul {
+      padding-left: 16px;
     }
 
 
@@ -233,7 +246,7 @@ const Wrapper = styled.div`
     }
 
     h2 {
-      margin: 0 0 2px 10px;
+      margin: 0 0 2px 0;
       font-size: 34px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -305,7 +318,6 @@ const Wrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      margin: 0;
       padding: 0;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -313,19 +325,23 @@ const Wrapper = styled.div`
 
     .project-title {
       display: flex;
+      box-sizing: border-box;
       width: 100%;
-      justify-content: flex-start;
+      justify-content: space-between;
       margin-top: 15px;
+      padding-right: 15px;
       color: #666666;
       white-space: none;
     }
 
     span {
       padding: 5px 15px;
+      margin: 0;
+      margin-right: 10px;
+      margin-top: 5px;
       background-color: #35c4f4;
       color: white;
       font-size: 0.8rem;
-      margin: 5px 10px 5px;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -337,7 +353,7 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 98%;
+      width: 100%;
       text-align: left;
       color: #444444;
     }
@@ -446,7 +462,6 @@ const Wrapper = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin: 0;
       padding: 0;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -454,10 +469,12 @@ const Wrapper = styled.div`
 
     span {
       padding: 5px 15px;
+      margin: 0;
+      margin-right: 10px;
+      margin-top: 5px;
       background-color: #35c4f4;
       color: white;
       font-size: 0.8rem;
-      margin: 5px 10px 5px;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
@@ -469,8 +486,7 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 95%;
-      padding: 0 20px;
+      width: 100%;
       text-align: left;
       color: #444444;
     }
