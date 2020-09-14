@@ -72,7 +72,7 @@ const PortfolioPage = () => (
             <h2>Custom Spellbook</h2>
             <a
                 className="social-media-link"
-                href="https://github.com/SolonTheWizard/custom-spellbook/"
+                href="https://github.com/srsuddath/custom-spellbook/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -130,7 +130,7 @@ const PortfolioPage = () => (
             <h2>Dad Joke Hangman</h2>
             <a
                 className="social-media-link"
-                href="https://github.com/SolonTheWizard/hangman-game/"
+                href="https://github.com/srsuddath/hangman-game/"
                 target="_blank"
                 rel="noreferrer noopener"
               >

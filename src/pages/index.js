@@ -32,7 +32,7 @@ class IndexPage extends Component {
             <div className="external-links">
               <a
                 className="social-media-link"
-                href="https://github.com/SolonTheWizard"
+                href="https://github.com/srsuddath"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -97,7 +97,7 @@ class IndexPage extends Component {
                 <li>
                   <a
                     className="special-link"
-                    href="https://github.com/SolonTheWizard"
+                    href="https://github.com/srsuddath"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
