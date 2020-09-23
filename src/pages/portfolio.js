@@ -87,6 +87,9 @@ const PortfolioPage = () => (
             <li>
               Meet the team and connect your sanctuary to our app to help sponsor your rescued animals.
             </li>
+            <li>
+              Coming soon: an intuitive way to donate to animals in need!
+            </li>
           </ul>
         </div>
         <div className="project-image">
