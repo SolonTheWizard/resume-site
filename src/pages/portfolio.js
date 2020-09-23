@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import project1Image from '../images/project1Image.png';
 import project2Image from '../images/project2Image.png';
 import project3Image from '../images/project3Image.png';
+import project4Image from '../images/project4Image.png';
 import github from '../images/github.png';
 import SEO from '../global/seo';
 import Layout from '../global/layout';
@@ -24,7 +25,6 @@ const PortfolioPage = () => (
           About Me
         </Link>
       </div>
-
       <div className="project">
         <div className="project-details">
           <div className="project-title">
@@ -66,6 +66,41 @@ const PortfolioPage = () => (
           </a>
         </div>
       </div>
+      <div className="project">
+        <div className="project-details">
+          <div className="project-title">
+            <h2>BarnPals.org</h2>
+          </div>
+          <div className="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Styled Components</span>
+            <span>Gatsby</span>
+            <span>Firebase</span>
+          </div>
+          <div className="description">
+            Bridging the gap between farm sanctuaries and donors to save animals everywhere.
+          </div>
+          <ul>
+            <li>Built using Gasby and Google Firebase</li>
+            <li>Connects users with news about upcomming Barn Pals apps </li>
+            <li>
+              Meet the team and connect your sanctuary to our app to help sponsor your rescued animals.
+            </li>
+          </ul>
+        </div>
+        <div className="project-image">
+          <a
+            className="image-link"
+            href="https://barnpals.org/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={project4Image} alt="project 4" />
+          </a>
+        </div>
+      </div>
+
       <div className="project">
         <div className="project-details">
           <div className="project-title">
